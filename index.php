@@ -21,7 +21,7 @@
         
         <div id="search" class="search">
 
-            <form action="#" method="GET" class="search-bar" target="_self" enctype="">
+            <form action="searchResult.php" method="GET" class="search-bar" target="_self" enctype="">
                 <input type="hidden" id="lat"  name="lat">
                 <input type="hidden" id="lng"  name="lng">
                 <input type="text" placeholder="キーワードで検索" name="searchR">
@@ -59,7 +59,10 @@
 
     <section class="slider_container">
 
-        <h1>最近のイベント</h1>
+        <!-- <h1>最近のイベント</h1> -->
+        <div id="deco_ft">
+            <img src="./image/HT_Fox_FrontPage1.png">
+        </div>    
 
         <div class="container">
             <div class="swiper card_slider">
@@ -126,32 +129,6 @@
         </div>
     </section>
 
-
-
-
-    <!-- <section id="recentEvent">
-        <div class="slide-container swiper">
-            <div class="slide-content">
-                <div class="card-wrapper swiper-wrapper">
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-
-                                    <img src="./image/works1.jpg" class="card-img">
-                                </div>
-
-                        <div class="card-content">
-                            <h2 class="card-name">イベント名</h2>
-                            <p class="card-time">日時</p>
-                            <p class="card-place">場所</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section> -->
-
     <!--メリット一覧-->
 
     <section id="meritArea">
@@ -159,7 +136,7 @@
         <div id="redDecoBox"></div>
 
         <div id="meritBigBox">
-            <h1>メリット一覧</h1>
+            <h1>ボランティアのメリット</h1>
             <div id="meritSmallBox">
                 <div id="meritBox1">
                     <p>　　　社会貢献　　　</p>
@@ -177,8 +154,8 @@
 
     </section>
 
-    <div>
-        <img src="./image/HT_Fox FrontPage.png">
+    <div id="deco_hm">
+        <img src="./image/HT_Fox FrontPage2.png">
     </div>
 
     <?php include('./Navbar/footer.php'); ?>

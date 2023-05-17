@@ -1,8 +1,8 @@
 <header>
-        <a href="#" class="logo">LOGO</a>
+        <a href="./index.php" class="logo">LOGO</a>
 
     <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">PROFILE</a></li>
+        <li><a href="./index.php">HOME</a></li>
+        <li><a href="./login_page_User.php">PROFILE</a></li>
     </ul>
 </header>

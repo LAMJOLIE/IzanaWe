@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'HandWriteFont';
+    src: url(../font/851MkPOP_101.ttf) format('TrueType');
+}
+@font-face {
+    font-family: 'OutlineFont';
+    src: url(../font/GN-Natsu-iro-Schedule.ttf) format('TrueType');
+}
+@font-face {
+    font-family: 'KleeOneFont';
+    src: url(../font/KleeOne-Regular.ttf) format('TrueType');
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
 /* NavBar CSS 開始*/
 
 *::before,

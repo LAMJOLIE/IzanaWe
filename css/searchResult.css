@@ -1,10 +1,3 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-}
-
 /*Header画像エリア ＋ ページ名CSS 開始*/
 
 #SR_header{
@@ -22,10 +15,8 @@
 
 #SR_tilte{
     background-color: #DD0000;
-
-    margin-top: 255px;
-    margin-left: 850px;
-    margin-bottom: 30px;
+    top: 50%;
+    left:70% ;
     padding: 20px 40px;
     z-index: 500;
     position: absolute;
@@ -41,28 +32,17 @@
 }
 
 /*Header画像エリア ＋ ページ名CSS 終了*/
+/*-------------------------------------------------*/
 
-/* Body CSS*/
-
-/* OPening area CSS*/
-/* 検索エリアCSS　開始 */
+/*検索ボックス　CSS　開始 */
 
 #SR_SearchBar{
     width: 100%;
-    display: flex;
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 30px;
     margin-top: 0px;
-}
-
-.main-search h1{
-    width: 100%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .search{
@@ -72,16 +52,23 @@
     height: 200px;
 }
 
+#search{
+    width:100%;
+    padding-top: 165px;
+    padding-bottom: 75px;
+}
 
 .search-bar{
     width: 100%;
     max-width: 700px;
-    background: rgba(255, 255, 255, 0.5);
+    background: white; /**/
+    border: solid 3px #DD0000;
     display: flex;
     align-items: center;
     border-radius: 30px;
     padding: 10px 25px;
-    backdrop-filter: blur(4px) saturate(180%);
+    /* backdrop-filter: blur(4px) saturate(180%); */
+    box-shadow: 11px 12px 10px gray;
 }
 
 .search-bar input{
@@ -112,5 +99,116 @@
 }
 
 
+/*指定距離+テーマ　ボックス　CSS　開始 */
 
-/* 検索エリアCSS　終了 */
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0!important;
+    background: rgba(255, 255, 255, 0.5);
+    background-image: none;
+    border-radius: 10px;
+}
+
+select::-ms-expand{
+    display: none;
+}
+
+.select{
+    position: relative;
+    display: flex;
+    width: 15em;
+    height: 3em;
+    line-height: 3;
+    margin-right: 10px;
+    background: #999999;
+    /* backdrop-filter: blur(4px) saturate(180%); */
+    overflow: hidden;
+    border-radius: 10px
+}
+
+select {
+    flex: 1;
+    padding: 0.5em;
+    color: #555555;
+    cursor: pointer;
+    
+}
+
+/* .select select option{
+    text-align: center;
+} */
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all event;
+}
+
+.select:hover::after{
+    color: #555555;
+}
+
+/*指定距離+テーマ　ボックス　CSS　終了*/
+
+/* 検索ボックス　CSS　終了 */
+/*-------------------------------------------------*/
+
+/*　検索結果の一覧CSS　開始*/
+.place-content-wrap {
+    position: relative;
+}
+
+
+.place-content{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.event-item{
+    background:#eeeeee;
+    border-radius: 10px;
+    padding:15px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.item-box{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: #555555;
+}
+
+.event-item:hover{
+    background:#999999;
+}
+
+.center-item{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.event-item img{
+    width: 40vmin;
+    height: 40vmin;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.event-item h5{
+    padding: 0 45px;
+}
+/*　検索結果の一覧表CSS　終了*/
